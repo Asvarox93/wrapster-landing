@@ -1,0 +1,29 @@
+.footer{
+    background-color: $footer-background;
+    color:$footer-font-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 0 0 0.2rem;
+
+
+    &__social{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    
+      &__item{
+        a img{
+        height:2rem;
+        padding: 0 0.85rem;
+          &:hover{
+            filter: invert(80%) !important;
+          }
+        }
+    
+      }
+}

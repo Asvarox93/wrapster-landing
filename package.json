@@ -1,0 +1,46 @@
+{
+  "name": "new_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio pokazujące moja umiejętności.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asvarox93/New_Portfolio.git"
+  },
+  "author": "Asvarox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Asvarox93/New_Portfolio/issues"
+  },
+  "homepage": "https://github.com/Asvarox93/New_Portfolio#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.8.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect-php": "^1.0.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-include": "^2.3.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-require-file": "^1.1.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^5.0.1"
+  },
+  "dependencies": {
+    "normalize-scss": "^7.0.0",
+    "reset-css": "^2.2.1",
+    "static-server": "^2.0.5"
+  }
+}

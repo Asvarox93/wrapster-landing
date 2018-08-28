@@ -1,0 +1,9 @@
+@mixin slideIn($name, $number, $time, $opacity:1, $direction:top){
+    animation-name: $name;
+    animation-duration: $time;
+    
+    @keyframes #{$name} {
+        0%   {#{$direction}:$number; opacity: $opacity;}
+        100% {#{$direction}:0px; opacity: 1;}
+    }
+}

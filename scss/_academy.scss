@@ -1,0 +1,90 @@
+.academy{
+   background-color: $academy-background;
+   color: $academy-font-color;
+   text-align: center;
+   margin-top: 7rem;
+   position: relative;
+
+
+   &::after{
+       display: block;
+       position: absolute;
+       right:2rem;
+       bottom:0;
+       content: "";
+       width:330px;
+       height:535px;
+       background: url(./images/wraper.png);
+       background-size: cover;
+       @media screen and (max-width: 1079px) {
+        right:-1.2rem;
+      }
+       @media screen and (max-width: 859px) {
+        right:-2.5rem;
+      }
+      @media screen and (max-width: 817px) {
+        right:-4.5rem;
+      }
+      @media screen and (max-width: 767px) {
+        right:-9rem;
+      }
+      @media screen and (max-width: 685px) {
+        right:-11rem;
+      }
+      @media screen and (max-width: 621px) {
+        right:-13rem;
+      }
+      @media screen and (max-width: 507px) {
+        display: none;
+      }
+   }
+
+   &__body{
+       margin:4rem 0;
+       display: flex; 
+       position: relative;
+       
+   }
+
+   &__container{
+    margin:0 auto;
+    width:50%;
+
+    @media screen and (max-width: 767px) {
+        width:80%;
+      }
+   }
+ 
+   &__title{
+       text-align: center;
+       font-size:2.5em;
+       text-transform: uppercase;
+       font-family: $font-style-title;
+       @media screen and (max-width: 539px) {
+        font-size: 2em;
+      }
+   }
+
+   &__describle{
+      margin-top:2rem;
+      text-align: center;
+      font-family:$font-style-describle;
+   }
+
+   &__button{
+       margin-top:2rem;
+       font-size:1.4em;
+       padding:0.8rem 3rem;
+       border:none;
+       border-radius: 0.5rem;
+       color:$academy-font-color;
+       font-family:$font-style-title;
+       letter-spacing: 0.1rem;
+       background-color: $academy-btn-background;
+       &:hover{
+        cursor: pointer;
+        background-color: darken($academy-btn-background,10%);
+       }
+   }
+
+}

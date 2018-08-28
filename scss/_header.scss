@@ -1,0 +1,138 @@
+.header{
+
+  margin:0;
+  padding: 0;
+
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 496px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0.5rem;
+    }
+  }
+  
+  &__logo{
+    margin:0.5rem 0 0.5rem 0.5rem;
+    height:3.5rem;
+    transition: all ease-in-out 0.3s;
+    &:hover{
+      transform: scale(1.1);
+      transition: all ease-in-out 0.3s;
+    }
+
+    &--width{
+      max-width: 320px;
+    }
+  }
+
+  &__social{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media screen and (max-width: 496px) {
+      margin-top: 0.5rem;
+    }
+
+    &--width{
+      max-width: 180px;
+    }
+  }
+
+  &__item{
+    a img{
+    height:2rem;
+    padding: 0 0.85rem;
+      &:hover{
+        filter: invert(80%) !important;
+      }
+    }
+
+  }
+
+  &__hero{
+    background-image: url("./images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:45rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position-y: bottom;
+
+    @media screen and (max-width: 991px) {
+      background-position-x: -7rem;
+    }
+    @media screen and (max-width: 767px) {
+      background-position-x: -20rem;
+    }
+
+  }
+
+  &__title{
+    font-size:3em;
+    color:$header-font-color;
+    font-family: $font-style-title;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 845px) {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 539px) {
+      font-size: 2em;
+    }
+  }
+
+  &__description{
+    font-size:2em;
+    color:$header-font-color;
+    font-family: $font-style-describle;
+    
+    @media screen and (max-width: 845px) {
+      font-size: 1.3em;
+    }
+
+    @media screen and (max-width: 539px) {
+      font-size: 1em;
+    }
+  }
+
+  &__link{
+    background-color:$header-link-bg;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.3em;
+
+    @media screen and (max-width: 845px) {
+      font-size: 1em;
+    }
+
+    @media screen and (max-width: 645px) {
+      font-size: 0.8em;
+    }
+    
+  }
+
+  &__cost{ 
+    margin:0;
+    padding:0;
+    font-size:3.5em;
+    font-family: $font-style-title;
+    text-transform: uppercase;
+    color:$header-cost-font-color;
+  }
+
+
+}

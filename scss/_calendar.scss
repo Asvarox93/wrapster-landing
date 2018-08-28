@@ -1,0 +1,79 @@
+
+#terminy-szkolen{
+  background-color: $form-background;
+  padding-bottom: 2rem !important;
+}
+.terminy-describle {
+  font-size:0.7em;
+  padding-top:2rem;
+  color:$form-font-color;
+  font-family: $font-style-describle;
+}
+.terminy-title{
+  padding-top:3rem;
+  text-transform: uppercase;
+  color:$form-font-color;
+  font-family: $font-style-title;
+  letter-spacing: 0.1rem;
+
+  @media screen and (max-width: 539px) {
+    font-size: 2em;
+  }
+}
+#bookero_form input, .bookero-parameter-select, .bookero-service-input, .bookero-parameter-checkbox span::before, .bookero_form_calendar-calendar-head, .bookero-form-termins-list{
+  color:$form-input-font-color !important;
+}
+.bookero-parameter-checkbox span::before{
+  cursor: pointer !important;
+}
+
+#bookero_form{
+  background-color: $form-background !important;
+  color:$form-font-color !important;
+}
+
+.bookero_form_line:last-child{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+#bookero_form_submit {
+  padding:0.8rem 3rem !important;
+  font-size: 1.4em !important;
+  background-color: $form-btn-background !important;
+  color: $form-font-color !important;
+  font-family:$font-style-title !important;
+  border: none !important;
+  text-transform: uppercase !important;
+  text-shadow: none !important;
+  margin:0 auto !important;
+  letter-spacing: 0.1rem;
+  align-self: center !important;
+  &:hover {
+    cursor: pointer !important;
+    background-color: darken($form-btn-background, 10%) !important;
+    color: $form-font-color !important;
+  }
+}
+
+#bookero_form {
+  input:focus {
+    background-color: darken($form-btn-background, 10%) !important;
+  }
+}
+#bookero
+  #bookero_form
+  .bookero_form_line
+  .bookero_form_calendar-calendar
+  .bookero_form_calendar-calendar-grid
+  span.bookero_form_calendar-calendar-day:hover {
+  color:$form-font-color !important;
+  background: darken($form-btn-background, 10%) !important;
+}
+
+.bookero_form_calendar-calendar-hour-item:hover{
+  color:$form-font-color !important;
+  background: darken($form-btn-background, 10%) !important;
+}
