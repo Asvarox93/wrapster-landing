@@ -1,6 +1,4 @@
-# Moje Portfolio
-
-Strona która ma pokazać moje umiejętności we Front-endzie.
+# Wrapster-landing
 
 Wykorzystałem:
 - HTML5
